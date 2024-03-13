@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <p>F.A.Q</p>
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+            <button class="accordion">
+                What is ICRF?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>I-Crescent Relief Foundation
+                    Is a non-profit, non-governmental organization based in Nigeria which establishment is based on the realization that active poor has potentials to create jobs and enhancing the quality of life.</p>
+            </div>
+        </div>
+        
+        <div class="faq">
+            <button class="accordion">
+                What is the vision f ICRF?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>I-Crescent Relief Foundation's vision is to be the foremost organization that provides sustainable solutions to poverty, hunger, and financial inclusion in Nigeria and Africa in general through its various schemes.</p>
+            </div>
+        </div>
+        
+        <div class="faq">
+            <button class="accordion">
+                What are the objectives of ICRF?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>The objectives of the foundation include mobilizing funds from individuals to assist the less privileged in the society economically, seeking for donations from national and international donors, engaging in viable businesses and projects for the betterment of the society, assisting people in their socio-economic endeavors, owning investment assets and channeling the income generated into the welfare of the people, and collaborating with other national and international organizations with similar aims and objectives.</p>
+            </div>
+        </div>
+        
+        <div class="faq">
+            <button class="accordion">
+                How is ICRF governed?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>I-Crescent Relief Foundation is governed by a Board of Trustees appointed by the founders, and its organs are managed on a daily basis by sets of management teams comprising mainly pioneer members and headed by experienced and competent persons.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                What programs does ICRF offer?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Crescent Relief Foundation offers Social Micro-Finance Scheme, Co-operative model, and Ta'awun Contributory Health Scheme.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName
+        ("accordion");
+        var i;
+
+        for(i = 0; i < acc.length ; i++){
+            acc[i].addEventListener("click", function
+            (){
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle
+                ("active");
+
+                var pannel = this.nextElementSibling;
+
+                if(pannel.style.display === "block") {
+                    pannel.style.display = "none";
+                }else{
+                    pannel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>
